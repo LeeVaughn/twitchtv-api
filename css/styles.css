@@ -1,0 +1,107 @@
+/* twitch purple = #6441a4 / rgb(100, 65, 164) */
+
+
+/* darker twitch purple = #3c2860 */
+
+
+/* dark grey = #52616b */
+
+
+/* offline pink = #fc85ae */
+
+
+/* offline bright pink = #fd367e */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #3c2860;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    width: 210px;
+    border: 2px solid #6441a4;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+.container-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.logo {
+    margin: 10px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.container-status,
+.container.streamers,
+.container-search {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.status {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.streamers {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-bar {
+    margin: 0.5rem auto;
+    position: relative;
+}
+
+.search-bar button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: #6441a4;
+    border: 1px solid #3c2860;
+    border-radius: 5px;
+}
+
+.search-bar input {
+    text-indent: 30px;
+    padding: 10px;
+    width: 210px;
+    height: 30px;
+    border: 1px solid #3c2860;
+    border-radius: 5px;
+}
+
+.fa-search {
+    color: #fff;
+}
