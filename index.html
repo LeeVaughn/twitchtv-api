@@ -19,33 +19,25 @@
 
     <div class="container-header">
         <header class="main-header">
-            <img class="logo" src="https://regularlyscheduledprogrammingblog.files.wordpress.com/2018/01/twitch-logo.png">
+            <img class="twitch-logo" src="https://regularlyscheduledprogrammingblog.files.wordpress.com/2018/01/twitch-logo.png">
         </header>
     </div>
 
     <div class="container-status">
-        <ul class="status">
-            <li>All</li>
-            <li>Online</li>
-            <li>Offline</li>
+        <ul id="status">
+            <li id="all" class="active">All</li>
+            <li id="online">Online</li>
+            <li id="offline">Offline</li>
         </ul>
     </div>
 
     <div class="container-streamers">
-        <div class="streamers">
-            <h2>return information about streamers here...</h2>
+        <div id="streamers">
+            <ul id="names">
+            </ul>
         </div>
     </div>
-
-    <div class="container-search">
-        <div class="search-bar">
-            <button type="submit" id="search">
-                <i class="fa fa-search"></i>
-            </button>
-            <input type="text" class="search-input" id="searchTerm" placeholder="Search for Streamer">
-        </div>
-    </div>
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>
