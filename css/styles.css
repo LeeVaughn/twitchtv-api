@@ -1,15 +1,7 @@
 /* twitch purple = #6441a4 / rgb(100, 65, 164) */
-
-
 /* darker twitch purple = #3c2860 */
-
-
 /* dark grey = #52616b */
-
-
 /* offline pink = #fc85ae */
-
-
 /* offline bright pink = #fd367e */
 
 * {
@@ -25,17 +17,9 @@ button {
     cursor: pointer;
 }
 
-ul {
-    margin: 0;
-}
-
-li {
-    width: 210px;
-    border: 2px solid #6441a4;
-    border-radius: 5px;
-    margin: 10px auto;
-    padding: 5px 20px;
-    font-size: 20px;
+a {
+    color: #3c2860;
+    text-decoration: none;
 }
 
 .container-header {
@@ -50,14 +34,14 @@ li {
     text-align: center;
 }
 
-.logo {
-    margin: 10px auto;
+.twitch-logo {
+    margin: 20px auto;
     width: 80%;
     max-width: 400px;
 }
 
 .container-status,
-.container.streamers,
+.container-streamers,
 .container-search {
     display: flex;
     flex-wrap: wrap;
@@ -66,42 +50,82 @@ li {
     align-items: center;
 }
 
-.status {
+.name {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.on {
+    background: #80f29b;
+}
+
+.on:hover {
+    background: rgba(128, 242, 155, .8);
+}
+
+.off {
+    background: #fc85ae;
+}
+
+.off:hover {
+    background: rgba(252, 133, 174, .8);
+}
+
+.logo {
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+.displayName,
+.game,
+.topic {
+    margin: 0 auto;
+    padding: 0 10px 10px 10px;
+}
+
+#status,
+#names {
     text-align: center;
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-.streamers {
+#status {
+    width: 80%;
+}
+
+#status:hover {
+    cursor: pointer;
+}
+
+#all,
+#online,
+#offline {
+    border: 2px solid #6441a4;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+#all.active,
+#online.active,
+#offline.active {
+    color: #fff;
+    background: #6441a4;
+}
+
+#streamers {
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 
-.search-bar {
-    margin: 0.5rem auto;
-    position: relative;
-}
-
-.search-bar button {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    background-color: #6441a4;
-    border: 1px solid #3c2860;
+#names {
+    border: 2px solid #6441a4;
     border-radius: 5px;
-}
-
-.search-bar input {
-    text-indent: 30px;
-    padding: 10px;
-    width: 210px;
-    height: 30px;
-    border: 1px solid #3c2860;
-    border-radius: 5px;
-}
-
-.fa-search {
-    color: #fff;
+    margin: 20px auto 30px auto;
+    padding: 10px 10px 0 10px;
 }
