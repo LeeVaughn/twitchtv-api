@@ -1,5 +1,5 @@
 var names = ["freecodecamp", "csharpfritz", "blizzheroes", "noopkat", "noobs2ninjas", "vtriple", "supremerumham", "sheriffjackson", "jesseskinner", "esl_sc2", "dunktrain"];
-var displayName, logo, streaming;
+var displayName, logo;
 
 names.forEach((name) => {
     var channelAPI = "https://wind-bow.gomix.me/twitch-api/channels/" + name + "?callback=?";
